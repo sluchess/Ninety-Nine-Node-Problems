@@ -6,8 +6,11 @@ module.exports = {
   // 1. Write a function that return the last element of a list.
   last_element: function (l) {
     if (l.length >= 1) {
-      l.at(-1);
+      return l.at(-1);
       // l.slice(-1); // I am not sure which is better to use and why.
+    }
+    else {
+      return -1;
     }
   },
 
