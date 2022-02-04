@@ -1,0 +1,22 @@
+{
+  "name": "ninety-nine-node-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "bin": {
+    "ninetynine": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sluchess/Ninety-Nine-Node-Problems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sluchess/Ninety-Nine-Node-Problems/issues"
+  },
+  "homepage": "https://github.com/sluchess/Ninety-Nine-Node-Problems#readme"
+}
