@@ -58,6 +58,45 @@ module.exports = {
 
   // 7. Flatten a nested list structure.
   flatten_array: function (l) {
+    var ret = [];
+    for(var i = 0; i < this.length; i++) {
+      if(Array.isArray(this[i])) {
+        ret = ret.concat(this[i].flatten());
+      } else {
+        ret.push(this[i]);
+      }
+    }
+    return ret;
+  },
+
+  // 8. Eliminate consecutive duplicates of list elements.
+  remove_dupes: function (l) {
+    var set = new Set(l);
+    return Array.from(set);
+  },
+
+  // 9. Pack consecutive duplicates of list elements into sublists.
+  pack: function (l) {
+
+  },
+
+  // 10. Run-length encoding of a list.
+  encode: function (l) {
+
+  },
+
+  // 11. Modify run-length encoding.
+  new_encode: function (l) {
+
+  },
+
+  // 12. Decode a run-length encoded list.
+  decode: function (l) {
+
+  },
+
+  // 13. Run-length encoding of a list (direct solution).
+  new_decode: function (l) {
 
   }
 }
