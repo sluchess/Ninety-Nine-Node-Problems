@@ -28,7 +28,7 @@ module.exports = {
   // 3. Find the K'th element of a list.
   kth_element: function (l, k) {
     if (l.length >= k) {
-      return l.at(-k);
+      return l.at(k);
       // return l.slice(-k);
     }
     else {
@@ -44,6 +44,7 @@ module.exports = {
   // 5. Reverse a list.
   rev: function (l) {
     l.reverse();
+    return l
   },
 
   // 6. Find out whether a list is a palindrome
