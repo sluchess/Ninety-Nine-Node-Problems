@@ -51,23 +51,15 @@ module.exports = {
   is_palindrome: function (l) {
     var temp = [...l]; // make a copy of the array.
     temp.reverse();
-    if (temp == l){
-      return True;
+    if (JSON.stringify(temp) === JSON.stringify(l)){
+      return true;
     }
-    return False;
+    return false;
   },
 
   // 7. Flatten a nested list structure.
   flatten_array: function (l) {
-    var ret = [];
-    for(var i = 0; i < this.length; i++) {
-      if(Array.isArray(this[i])) {
-        ret = ret.concat(this[i].flatten());
-      } else {
-        ret.push(this[i]);
-      }
-    }
-    return ret;
+    return l.flat(Infinity);
   },
 
   // 8. Eliminate consecutive duplicates of list elements.

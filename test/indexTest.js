@@ -38,4 +38,24 @@ describe('Index', function() {
     });
   });
 
+  describe('is_palindrome()', function() {
+    it('function should return True if input is a palindrome.', function() {
+      assert.equal(index.is_palindrome([1,2,3,2,1]), true);
+    });
+  });
+
+  describe('flatten_array()', function() {
+    it('function should remove nested arrays from input while keeping the contents of said arrays.', function() {
+      // assert.equal(index.flatten_array([[[0], [1]], [[2], [3]], [[4], [5]]]), [0, 1, 2, 3, 4, 5]);
+      expect(index.flatten_array([[[0], [1]], [[2], [3]], [[4], [5]]])).to.eql([0, 1, 2, 3, 4, 5]);
+    });
+  });
+
+  describe('remove_dupes()', function() {
+    it('function should eliminate consecutive duplicates of list elements.', function() {
+      // assert.equal(index.flatten_array([[[0], [1]], [[2], [3]], [[4], [5]]]), [0, 1, 2, 3, 4, 5]);
+      expect(index.remove_dupes([0, 1, 1, 1, 2, 2, 3, 4, 4, 5, 5, 5])).to.eql([0, 1, 2, 3, 4, 5]);
+    });
+  });
+
 });
