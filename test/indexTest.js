@@ -34,7 +34,7 @@ describe('Index', function() {
   describe('rev()', function() {
     it('function should return the input array in reversed order.', function() {
       // assert.equal(index.rev([5,4,3,2,1]), [1,2,3,4,5]);
-      expect(index.rev([5,4,3,2,1]).to.eql([1,2,3,4,5]));
+      expect(index.rev([5,4,3,2,1])).to.eql([1,2,3,4,5]);
     });
   });
 

@@ -49,7 +49,7 @@ module.exports = {
 
   // 6. Find out whether a list is a palindrome
   is_palindrome: function (l) {
-    temp = [...l]; // make a copy of the array.
+    var temp = [...l]; // make a copy of the array.
     temp.reverse();
     if (temp == l){
       return True;
